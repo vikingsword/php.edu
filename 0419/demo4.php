@@ -45,7 +45,7 @@ foreach($users as $user){
 }
 $table .= '</tbody></table>';
 echo $table;
-// foreach($user => $item){
+// foreach($user as $key => $item){
 //     echo $item;
 // };
 
