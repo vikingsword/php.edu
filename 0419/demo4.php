@@ -22,16 +22,29 @@ echo $user['name'];
 // 数组成员还可以是一个数组,多维数组: 二维数组
 // 数据表的查询结果,就是用"二维数组"来表示
 $users = [
-    0 => ['id' => 5, 'name' => '猪老师', 'gender' => 0, 'age' => 18],
-    1 => ['id' => 6, 'name' => '牛老师', 'gender' => 1, 'age' => 30],
-    2 => ['id' => 5, 'name' => '狗老师', 'gender' => 0, 'age' => 35],
+    0 => ['id' => 1, 'name' => '猪老师', 'gender' => 0, 'age' => 18],
+    1 => ['id' => 2, 'name' => '牛老师', 'gender' => 1, 'age' => 30],
+    2 => ['id' => 3, 'name' => '狗老师', 'gender' => 0, 'age' => 35],
 ];
 
 // foreach
 // foreach (数组 as 键名 => 值){...}   键名可选
-$table = '<table>';
-$table .= '<caption>';
-$table .= '</table>';
+$table = '<table border="1" width="400" cellspacing="0" cellpadding="3" align="center">';
+$table .= '<caption>用户信息表</caption>';
+$table .= '<thead bgcolor="#ccc"><tr><th>id</th><th>用户名</th><th>性别</th><th>年龄</th></tr></thead>';
+$table .= '<tbody align="center">';
+// 遍历二维数组
+foreach($users as $user){
+    print_r($user);
+    $table .= '<tr>';
+    $table .= '<td>'.$user['id'].'</td>';
+    $table .= '<td>'.$user['name'].'</td>';
+    $table .= '<td>'.($user['gender']?'女':'男').'</td>';
+    $table .= '<td>'.$user['age'].'</td>';
+    $table .= '</tr>';
+}
+$table .= '</tbody></table>';
+echo $table;
 // foreach($user => $item){
 //     echo $item;
 // };
