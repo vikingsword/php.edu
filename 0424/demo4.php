@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * 类与实例
+ * 1. class
+ * 2. new
+ */
+
+ 
 // 类声明
 // 1. class
 class Goods {
