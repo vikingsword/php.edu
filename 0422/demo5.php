@@ -7,8 +7,8 @@ printf('<pre>%s</pre>', print_r($stu, true));
 $res = array_slice($stu, 0, 2);
 printf('<pre>%s</pre>', print_r($res, true));
  // 后两个
- $res2 = array_slice($stu, -2);
- printf('<pre>%s</pre>', print_r($res2, true));
+$res2 = array_slice($stu, -2);
+printf('<pre>%s</pre>', print_r($res2, true));
 echo '<hr>';
 
  // array_splice

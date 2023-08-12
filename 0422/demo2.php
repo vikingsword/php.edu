@@ -8,7 +8,7 @@ printf('<pre>%s</pre>',print_r(array_values($arr),true));
 var_dump(in_array('id',$arr));
 echo '<br>';
 
-// array_search
+// array_search 根据值找键
 echo array_search('20',$arr) . '<br>';
 $key = array_search('20',$arr);
 echo $arr[$key] . '<br>';
