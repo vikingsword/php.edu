@@ -15,7 +15,7 @@
             
             <!-- php 标签内部是 php 代码 -->
             <?php
-                echo '<span style="color:red">vikingar</span>';
+                echo '<span style="color:rgb(186,127,178)">vikingar</span>';
             ?>
         </h2>
         
