@@ -43,7 +43,7 @@ class Db
         // return $query->$name($args);
 
         // 回调的方式来执行对象方法
-        return call_user_func([new Query,$name],$args);
+        return call_user_func([new Query, $name], $args);
     }
 }
 
