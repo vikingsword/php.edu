@@ -33,6 +33,38 @@ echo 'this is : ' . $test(1.1, 2.2, 3.3);
 echo 'this is : ' . $test(1.1, 2.2, 3.3, 4.4);
 
 
+$sum = function (...$args) {
+    return array_reduce($args, function ($a1, $a2) {
+        return $a1 + $a2;
+    });
+};
+
+echo 'sum = ' . $sum(1, 2, 3, 4, 5) . '<br>';
+
+$arr = [1, 2, 3];
+print_r($arr);
+
+
+$arr2 = [1, 2, 3, 4, 5, 6, 7];
+
+function filter(array $arr2, $val)
+{
+    return array_filter($arr2, function ($item) use ($val) {
+        return $item > $val;
+    });
+}
+
+$arr3 = filter($arr2, 3);
+print_r($arr3);
+
+
+
+
+
+
+
+
+
 
 ?>
 
