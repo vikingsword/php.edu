@@ -17,7 +17,7 @@ $obj = new Class(111){
 echo '<br>';
 echo gettype($obj).'<br>';
 
-echo $obj->salary.'<br>';
+//echo $obj->salary.'<br>';
 
 
 
