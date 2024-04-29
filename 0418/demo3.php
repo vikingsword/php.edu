@@ -38,7 +38,7 @@ echo vsprintf('品名: %s, 单价: %.2f 元, 数量: %d 部<br>', $arr);
 // PDO: DSN
 // new PDO($dsn, $usrname,$password);
 // $dsn = 'mysql:host=localhost;dbname=phpedu;port=3306;charset=utf8';
-$params = ['mysql', 'localhost', 'phpedu', '3306', 'utf8'];
+$params = ['mysql', 'localhost', 'phpedu', '3306', 'utf8mb4'];
 $dsn = vsprintf('%s:host=%s;dbname=%s;port=%s;charset=%s', $params);
 $username = 'root';
 $password = 'root';
