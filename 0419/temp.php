@@ -9,7 +9,7 @@ $o = new Class(1234){
         return $this->salary;
     }
 };
-echo $o->salary . '<br>';
+//echo $o->salary . '<br>';
 
 function getname($name){
     echo $name;

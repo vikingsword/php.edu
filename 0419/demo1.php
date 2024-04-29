@@ -30,19 +30,19 @@ $obj = new Class(123){
 };
 echo gettype($obj) . '<br>';
 // 注意这里是逗号
-echo '工资是： ', $obj->salary;
+//echo '工资是： ', $obj->salary;
 
 
 
 
-// ? 3. 特殊类型： null、资源
-// 1. null  2. 没赋值  3. unset()删除了一个变量
-$x;
-if(is_null($x)) echo 'Null';
-echo '<br>';
-$f = fopen('../index.php', 'r');
-echo gettype($f);
-echo '<br>';
+//// ? 3. 特殊类型： null、资源
+//// 1. null  2. 没赋值  3. unset()删除了一个变量
+//$x;
+//if(is_null($x)) echo 'Null';
+//echo '<br>';
+//$f = fopen('../index.php', 'r');
+//echo gettype($f);
+//echo '<br>';
 
 
 
