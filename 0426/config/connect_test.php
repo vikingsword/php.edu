@@ -20,7 +20,7 @@ $username;
 $password;
 <br>
 SHOW;
-
+echo '<br>';
 // pdo: 连接三要素
 
 // 1. dsn

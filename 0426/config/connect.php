@@ -4,6 +4,7 @@ namespace pdo_edu;
 use PDO;
 
 $dbConfig = require 'database.php';
+// 将关联数组中的每一个成员，打散成独立变量
 extract($dbConfig);
 
 // 1.dns
