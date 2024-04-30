@@ -56,6 +56,8 @@ if (isset($_FILES['my_pic'])) {
                 // 将文件从临时目录移动到目标目录中并重命名
                 if (move_uploaded_file($temp_name, $dest)) {
                     echo '<p style="color: green">上传成功</p>';
+                    // 预览文件 , 这里 echo 外部要用双引号
+                    echo "<img src='$dest' width='300'>";
                 } else {
                     echo '<p style="color: red">移动失败</p>';
                 }
