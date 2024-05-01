@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<?php
+//printf('<pre>%s</pre>', print_r($_FILES, true));
+foreach ($_FILES as $file) {
+    if ($file['error'] === 0) {
+        $dest_file = 'upload/' . $file['name'];
+        move_uploaded_file($file['tmp_name'], $dest_file);
+        echo "<img src='$dest_file' width='200'>";
+    }
+}
 
+?>
 
 <head>
     <meta charset="UTF-8">
