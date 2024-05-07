@@ -1,4 +1,4 @@
-<?php require 'demo5.php' ?>
+<?php require 'test6.php' ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -57,7 +57,9 @@
     </tr>
     </thead>
     <tbody>
-    <?php /** @var TYPE_NAME $staffs */
+
+    <?php
+    /** @var TYPE_NAME $staffs */
     foreach ($staffs as $staff) : extract($staff) ?>
         <tr>
             <td><?= $id ?></td>
@@ -66,18 +68,11 @@
             <td><?= $email ?></td>
         </tr>
     <?php endforeach ?>
+
+
     </tbody>
 </table>
 <p>
-    <?php for ($i = 1; $i <= $pages; $i++) : ?>
-        <?php
-        $url = $_SERVER['PHP_SELF'] . '?p=' . $i;
-        echo 'url = ' . $url;
-        $active = $i == $_GET['p'] ? 'active' : null;
-        ?>
-        <a href="<?= $url ?>" class="<?= $active ?>"><?= $i ?></a>
-
-    <?php endfor ?>
 </p>
 </body>
 
