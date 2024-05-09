@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<?php
-$db = new PDO('mysql:dbname=phpedu', 'root', 'root');
-$stmt = $db ->prepare('SELECT * FROM `staff` LIMIT 10');
-$stmt->execute();
-$staffs = $stmt->fetchAll();
-foreach ($staffs as $staff) {
-    printf('<pre>%s</pre>', print_r($staff, true));
-}
-?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,10 +39,3 @@ foreach ($staffs as $staff) {
 
 </html>
 
-<?php
-// 数组解构,像ES6中也有
-// list($a, $b, $c) = [100, 200, 300];
-// 像ES6中一样,左边使用模板
-// [$a, $b, $c] = [100, 200, 300];
-// echo $a, $b, $c;
-?>
