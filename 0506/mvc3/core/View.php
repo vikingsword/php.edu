@@ -1,4 +1,5 @@
 <?php
+namespace phpcn2;
 
 class View {
     public function display($data)

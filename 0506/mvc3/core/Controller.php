@@ -1,5 +1,7 @@
 <?php
 
+namespace phpcn2;
+
 class Controller {
 
     protected $model;
@@ -16,7 +18,7 @@ class Controller {
     public function index()
     {
         // 1. 模型： 获取数据
-        $data = $this->model->getAll(2);
+        $data = $this->model->getAll(5);
 
         // 2. 视图： 渲染模板
         $this->view->display($data);

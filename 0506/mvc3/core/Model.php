@@ -1,5 +1,6 @@
 <?php
-
+namespace phpcn2;
+use PDO;
 
 class Model {
     // 数据库连接对象
