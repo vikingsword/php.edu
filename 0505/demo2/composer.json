@@ -1,3 +1,12 @@
 {
+  "autoload": {
+    "classmap": ["lib/", "src", "app/Test1.php"],
+    "files": ["config/database.php", "func/helper.php"],
+    "psr-4": {
+      "admin\\": "admin/"
+    }
+  },
+  "require": {
 
+  }
 }
