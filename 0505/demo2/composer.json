@@ -7,6 +7,15 @@
     }
   },
   "require": {
-
+    "youngyezi/captcha": "^6.0",
+    "catfan/medoo": "^2.1"
+  },
+  "config": {
+    "repositories": {
+      "packagist": {
+        "type": "composer",
+        "url": "https://mirrors.aliyun.com/composer/"
+      }
+    }
   }
 }
