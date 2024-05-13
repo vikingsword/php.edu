@@ -55,6 +55,3 @@ p($action);
 // http://php.edu/0507/router/demo1.php?c=user&a=hello&id=12&name=peter
 echo call_user_func_array([$controller, $action], $params);
 
-
-
-
