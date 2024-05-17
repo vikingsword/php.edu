@@ -15,7 +15,7 @@ class UserController extends BaseController
     public function index()
     {
         // 数据库
-        // 查询构造器: 需要一个数据库操作入口类Db
+        // 查询构造器: 需要一个数据库操作入口类Db.惰性连接（默认你连接数1024）
         $users =  Db::table('user')->field('*')->select();
 
         dump($users);

@@ -37,7 +37,6 @@ class Query
         echo $sql;
 
         $stmt = $this->db->prepare($sql);
-      
         if ($stmt->execute()) {
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } else {

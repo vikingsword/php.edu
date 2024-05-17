@@ -26,10 +26,10 @@ return [
         'host' => '127.0.0.1',
 
         // 默认数据库
-        'dbname' => 'dbname',
+        'dbname' => 'phpedu',
 
         // 默认端口
-        'port' => '3006',
+        'port' => '3306',
 
         // 默认编码集
         'charset' => 'utf8',
